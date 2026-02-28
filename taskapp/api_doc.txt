@@ -1,0 +1,51 @@
+
+*)API for jwt Token create
+
+url:http://127.0.0.1:8000/nesa/login/
+
+methode:post
+
+body:username,password
+
+
+
+*)API for list tasks
+
+url:http://127.0.0.1:8000/nesa/tasks/
+
+methode:get
+
+body:nill
+
+
+*)API for create tasks
+
+url:http://127.0.0.1:8000/nesa/tasks/create/
+
+methode:post
+
+body:title,dicription,assigned_to,due_date
+
+
+*)API for tasks report
+
+url:http://127.0.0.1:8000/nesa/tasks/{id}/report/
+
+methode:get
+
+body:nill
+
+
+
+!!!!!!
+{
+if you want to test superadmin 
+you can use this
+
+username=superadmin
+password=Password@123
+
+Admin dashboard login using this username and password
+}
+
+!!!!!
