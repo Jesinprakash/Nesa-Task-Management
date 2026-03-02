@@ -51,6 +51,15 @@
             color: red;
             margin-bottom: 10px;
         }
+
+        .back-btn {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +106,7 @@
 
         <button type="submit">Update Task</button>
     </form>
+    <a href="{% url 'adminpanel' %}" class="back-btn">← Back to Dashboard</a>
 </div>
 
 </body>

@@ -357,6 +357,8 @@ class UserTaskListView(APIView):
     def get(self, request):
         tasks = Task.objects.filter(assigned_to=request.user)
         serializer = TaskSerializer(tasks, many=True)
+
+        print("tasks",serializer.data)
         return Response(serializer.data)
     
 
